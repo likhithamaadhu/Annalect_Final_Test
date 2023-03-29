@@ -46,11 +46,11 @@ db.create_all()
 def home():     #home page
     name='likhitha'  #testing whether the app is working or not using these variables
     age=22
-    inventory_items=Inventory.query.all()
+    inventory_items=Inventory.query.all() #displaying all data from inventory table in home page
     return render_template('home.html',name=name,age=age,inventory_items=inventory_items)
 
 @app.route('/showInventory',methods=['GET'])
-def displayInventory():              #it displays all the data in the inventory table
+def displayInventory():              #it gets data from the inventory table
     # inventory_items=Inventory.query.all()
     return jsonify({"message":"Data Displayed Successfully"})
 
