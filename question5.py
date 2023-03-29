@@ -34,6 +34,7 @@ for num in page_number:
 path = 'C:\\Users\\Likhitha.Maadhu\\OneDrive - OneWorkplace\\Desktop\\Final_Exam_Python\\' 
 file_name = 'test.csv'
 with open(path+file_name, 'w', newline='') as file:
+    #csv_writer = csv.writer(file,delimiter=',')
     csv_writer = csv.writer(file,delimiter='|')
     csv_writer.writerow(data[0].keys()) # Headings
 
