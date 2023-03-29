@@ -8,5 +8,21 @@
 </head>
 <body>
     <p>{{name}} is {{age}} years old</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Vendor name</th>
+
+            </tr>
+        </thead>
+    </table>
+
+    {% for row in data %}
+    <tr>
+        <td>row.itemname</td>
+    </tr>
+    
+    {% endfor %}
 </body>
 </html>
