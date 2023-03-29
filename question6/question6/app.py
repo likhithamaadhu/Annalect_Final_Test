@@ -47,4 +47,9 @@ def home(): #home page
     age=22
     return render_template('home.html',name=name,age=age)
 
+@app.route('/showInventory')
+def showInventory():
+    data=Inventory.query().all()
+    return redirect('home.html',data)
+
 app.run(debug=True)
