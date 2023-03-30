@@ -1,0 +1,16 @@
+
+6. Write a flask application for inventory management of a computer accessories store. 
+A store wants to have an inventory management application where the owner/store manager can login and see inventory 
+of the store.
+As a manager of the store, I should be able to see name of the accessory, quantities ordered, 
+quantities remaining, vendor name, purchase price per item, selling price per item, date and time when 
+the item was added, date and time when the item was updated. 
+I should also be able to add a new accessory, update existing accessory and delete an accessory. 
+Also a new manager should be able to register/login in the app. 
+
+Expectations: 
+	a) I want to see register/login in html page. 
+	b) A manager should be able to see details of accessories in tabular format using jinja. 
+    (If needed you can ask for template from us)
+	c) create/update/delete should be just apis with not frontend. We can call them using postman.
+	d) A working flask app with working apis.
